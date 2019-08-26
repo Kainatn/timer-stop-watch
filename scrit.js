@@ -32,6 +32,10 @@ window.onload = () => {
         document.getElementById("hour").innerHTML = '0';
         document.getElementById("minute").innerHTML = '0';
         document.getElementById("seconds").innerHTML = '0';
+         document.getElementById('stop-btn').addEventListener('click', () => {
+        if (intervalId)
+            clearInterval(intervalId);
+    });
     });
 }
 
